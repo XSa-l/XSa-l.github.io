@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenna的博客</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a6fa5' stroke-width='2'><polygon points='12 2 2 7 12 12 22 7 12 2'/><polyline points='2 17 12 22 22 17'/><polyline points='2 12 12 17 22 12'/></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 动态背景 -->
+    <div class="dynamic-background">
+        <div class="main-grid"></div>
+        <div class="blue-orb blue-orb-1"></div>
+        <div class="blue-orb blue-orb-2"></div>
+        <div class="blue-orb blue-orb-3"></div>
+        <div class="rotating-ring rotating-ring-1"></div>
+        <div class="rotating-ring rotating-ring-2"></div>
+        <div class="rotating-ring rotating-ring-3"></div>
+        <div class="rotating-ring rotating-ring-4"></div>
+        <div class="pulse-core"></div>
+        <div class="particle-container">
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+            <div class="main-particle"></div>
+        </div>
+        <div class="data-flow"></div>
+        <div class="data-flow"></div>
+        <div class="data-flow"></div>
+        <div class="data-flow"></div>
+        <div class="data-flow"></div>
+        <div class="scan-beam"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="tech-circle tech-circle-1"></div>
+        <div class="tech-circle tech-circle-2"></div>
+        <div class="tech-circle tech-circle-3"></div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                    <polyline points="2 17 12 22 22 17"/>
+                    <polyline points="2 12 12 17 22 12"/>
+                </svg>
+                <span>Xenna</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#projects" class="nav-link">项目展示</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页部分 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">你好，我是</span>
+                <span class="title-name">Xenna</span>
+            </h1>
+            <p class="hero-description">探索AI的无限可能，用代码创造智能未来</p>
+            <p class="hero-welcome">Welcome to my blog</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">查看项目</a>
+                <a href="#about" class="btn btn-secondary">了解更多</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="af6b560af1e0280ef278e5dae6051637.jpg" alt="Xenna" class="avatar-image" width="400" height="400">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>我是谁</h3>
+                    <p>我是一名对前端开发充满热情的大一新生，目前正在学习Web前端开发基础。我对创建美观的网页充满兴趣，正在不断探索和提升自己的技能。</p>
+                    
+                    <h3>正在学习</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="skill-name">HTML</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                    <path d="M2 2l7.586 7.586"/>
+                                    <circle cx="11" cy="11" r="2"/>
+                                </svg>
+                            </div>
+                            <div class="skill-name">CSS</div>
+                        </div>
+                    </div>
+
+                    <h3>学习目标</h3>
+                    <p>我正在系统学习前端开发技术，希望能够打好扎实的基础，逐步提升自己的网页开发能力。未来计划学习JavaScript等更多技术，成为一名合格的前端开发者。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示部分 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">项目展示</h2>
+            <p class="section-subtitle">我的精选项目</p>
+            
+            <div class="projects-grid">
+                <!-- 项目1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                                <path d="M7 8h10"/>
+                                <path d="M7 12h6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">个人介绍卡片</h3>
+                        <p class="project-description">一个简洁的个人介绍卡片，包含头像、姓名和基本信息的展示。</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="project1">查看详情 →</a>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">图片画廊</h3>
+                        <p class="project-description">响应式图片画廊布局，图片以网格形式展示，悬停有放大效果。</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="project2">查看详情 →</a>
+                    </div>
+                </div>
+
+                <!-- 项目3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="10" rx="2"/>
+                                <circle cx="12" cy="5" r="2"/>
+                                <path d="M12 7v4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">登录页面</h3>
+                        <p class="project-description">美观的登录表单页面，包含用户名和密码输入框及登录按钮。</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="project3">查看详情 →</a>
+                    </div>
+                </div>
+
+                <!-- 项目4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="6" y="6" width="12" height="12" rx="1"/>
+                                <path d="M10 9h4"/>
+                                <path d="M10 13h4"/>
+                                <path d="M10 17h4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">产品展示卡片</h3>
+                        <p class="project-description">产品卡片设计，包含产品图片、标题、价格和购买按钮。</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="project4">查看详情 →</a>
+                    </div>
+                </div>
+
+                <!-- 项目5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <line x1="8" y1="6" x2="21" y2="6"/>
+                                <line x1="8" y1="12" x2="21" y2="12"/>
+                                <line x1="8" y1="18" x2="21" y2="18"/>
+                                <line x1="3" y1="6" x2="3.01" y2="6"/>
+                                <line x1="3" y1="12" x2="3.01" y2="12"/>
+                                <line x1="3" y1="18" x2="3.01" y2="18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">音乐播放列表</h3>
+                        <p class="project-description">音乐歌曲列表展示，包含歌曲名称、歌手和播放时长信息。</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="project5">查看详情 →</a>
+                    </div>
+                </div>
+
+                <!-- 项目6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <path d="M8 8h8"/>
+                                <path d="M8 12h8"/>
+                                <path d="M8 16h4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">个人博客页面</h3>
+                        <p class="project-description">简洁的博客文章列表页面，展示文章标题和发布时间。</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link" data-project="project6">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>联系我</h3>
+                    <p>邮箱：example@email.com</p>
+                    <p>电话：+86 123 4567 8901</p>
+                </div>
+                <div class="footer-social">
+                    <h3>社交媒体</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Xenna. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 项目详情模态框 -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- 项目1模态框内容 -->
+                <div class="modal-project" id="project1-modal">
+                    <div class="modal-header">
+                        <div class="modal-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h2>个人介绍卡片</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-section">
+                            <h3>项目简介</h3>
+                            <p>这是一个基础的HTML和CSS练习项目，创建一个个人介绍卡片。卡片中包含头像区域、姓名和基本个人信息展示。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>实现功能</h3>
+                            <ul>
+                                <li>卡片布局和阴影效果</li>
+                                <li>图片圆形裁剪</li>
+                                <li>文字排版和间距</li>
+                                <li>悬停动画效果</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>学习要点</h3>
+                            <p>通过这个练习，我掌握了CSS盒子模型的基本概念，学习了Flexbox布局的基础用法，理解了阴影和圆角的实现方法。</p>
+                        </div>
+                    </div>
+                    <div class="modal-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Flexbox</span>
+                    </div>
+                </div>
+
+                <!-- 项目2模态框内容 -->
+                <div class="modal-project" id="project2-modal">
+                    <div class="modal-header">
+                        <div class="modal-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                        </div>
+                        <h2>图片画廊</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-section">
+                            <h3>项目简介</h3>
+                            <p>这是一个学习CSS网格布局的练习项目，创建一个响应式图片画廊。图片以网格形式排列展示，当鼠标悬停时图片会有放大效果。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>实现功能</h3>
+                            <ul>
+                                <li>网格布局展示图片</li>
+                                <li>响应式列数调整</li>
+                                <li>图片悬停放大效果</li>
+                                <li>图片间距设置</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>学习要点</h3>
+                            <p>通过这个练习，我学会了CSS Grid布局的基本用法，掌握了响应式设计的媒体查询应用，理解了transform变换和transition过渡效果的实现。</p>
+                        </div>
+                    </div>
+                    <div class="modal-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Grid</span>
+                    </div>
+                </div>
+
+                <!-- 项目3模态框内容 -->
+                <div class="modal-project" id="project3-modal">
+                    <div class="modal-header">
+                        <div class="modal-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <h2>登录页面</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-section">
+                            <h3>项目简介</h3>
+                            <p>这是一个学习表单样式设计的练习项目，创建一个美观的登录表单页面。包含用户名和密码输入框，以及登录按钮。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>实现功能</h3>
+                            <ul>
+                                <li>表单输入框样式</li>
+                                <li>placeholder文字样式</li>
+                                <li>登录按钮样式</li>
+                                <li>表单边框和阴影效果</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>学习要点</h3>
+                            <p>通过这个练习，我学会了表单元素的基础样式设置，掌握了输入框focus状态的样式变化，了解了按钮的交互效果实现。</p>
+                        </div>
+                    </div>
+                    <div class="modal-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>表单</span>
+                    </div>
+                </div>
+
+                <!-- 项目4模态框内容 -->
+                <div class="modal-project" id="project4-modal">
+                    <div class="modal-header">
+                        <div class="modal-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <line x1="12" y1="1" x2="12" y2="23"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <h2>产品展示卡片</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-section">
+                            <h3>项目简介</h3>
+                            <p>这是一个学习卡片布局的练习项目，创建一个产品展示卡片。包含产品图片、标题、价格和购买按钮等元素。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>实现功能</h3>
+                            <ul>
+                                <li>卡片整体布局</li>
+                                <li>产品图片展示</li>
+                                <li>价格标签样式</li>
+                                <li>按钮悬停效果</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>学习要点</h3>
+                            <p>通过这个练习，我巩固了Flexbox布局的使用，学到了卡片式设计的技巧，掌握了图片和文字的对齐方法。</p>
+                        </div>
+                    </div>
+                    <div class="modal-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>卡片设计</span>
+                    </div>
+                </div>
+
+                <!-- 项目5模态框内容 -->
+                <div class="modal-project" id="project5-modal">
+                    <div class="modal-header">
+                        <div class="modal-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="16" r="3"/>
+                            </svg>
+                        </div>
+                        <h2>音乐播放列表</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-section">
+                            <h3>项目简介</h3>
+                            <p>这是一个学习列表样式和Flex布局的练习项目，创建一个音乐歌曲列表展示。包含歌曲名称、歌手和播放时长信息。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>实现功能</h3>
+                            <ul>
+                                <li>列表项布局</li>
+                                <li>歌曲信息展示</li>
+                                <li>列表悬停效果</li>
+                                <li>间隔线设置</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>学习要点</h3>
+                            <p>通过这个练习，我学会了使用CSS美化列表样式，掌握了Flex布局在列表中的应用，理解了hover状态的样式变化。</p>
+                        </div>
+                    </div>
+                    <div class="modal-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>列表样式</span>
+                    </div>
+                </div>
+
+                <!-- 项目6模态框内容 -->
+                <div class="modal-project" id="project6-modal">
+                    <div class="modal-header">
+                        <div class="modal-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h2>新闻文章排版</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-section">
+                            <h3>项目简介</h3>
+                            <p>这是一个学习文本排版和段落格式的练习项目，创建一个简洁的文章展示页面。包含标题、段落、引用和分隔线等元素。</p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>实现功能</h3>
+                            <ul>
+                                <li>文章标题样式</li>
+                                <li>段落文字排版</li>
+                                <li>引用块样式</li>
+                                <li>分隔线设置</li>
+                            </ul>
+                        </div>
+                        <div class="modal-section">
+                            <h3>学习要点</h3>
+                            <p>通过这个练习，我学会了CSS文本样式设置，掌握了段落间距和行高的调整方法，理解了引用块的设计技巧。</p>
+                        </div>
+                    </div>
+                    <div class="modal-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>文本排版</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
